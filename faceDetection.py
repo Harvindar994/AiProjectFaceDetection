@@ -5,8 +5,7 @@ import cv2
 trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # in we are going to detect face.
-image = cv2.imread("image3.png")
-
+image = cv2.imread("image3.jpg")
 
 # convert in the gray scale
 grayscaled_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -24,7 +23,7 @@ cv2.waitKey()
 
 # For Video
 
-#  deleted the video so it will not work. for video.
+# deleted the video so it will not work. for video.
 
 #  Loading Video.
 video = cv2.VideoCapture("video.mp4")
@@ -46,6 +45,3 @@ while True:
         break
 
 video.release()
-
-
-
